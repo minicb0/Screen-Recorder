@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Recorder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <h1>Screen Recorder</h1>
+    <div id="contentWrapper">
+        <div>
+            <div class="buttonsDiv">
+                <button id="start">Start<i class="fas fa-record-vinyl"></i></button>
+                <button id="stop" class="hide">Stop<i class="fas fa-stop-circle"></i></button>
+            </div>
+            <div id="videoDiv">
+                <div>
+                    <div id="videoMsg">Recorded Video will be shown below</div>
+                    <video id="video"></video>
+                </div>
+            </div>
+            <div class="buttonsDiv" id="saveDiv">
+                <input type="text" placeholder="File Name" id="filename" class="hide">
+                <a href="" id="saveAnchor"><button id="save" class="hide">Save<i class="fas fa-save"></i></button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
